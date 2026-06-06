@@ -217,6 +217,18 @@ h2 {
   -webkit-line-clamp: 3;
 }
 
+.card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card-actions .cta {
+  padding: 8px 12px;
+  font-size: 0.88rem;
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: 14px;
