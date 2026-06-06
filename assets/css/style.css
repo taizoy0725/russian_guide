@@ -256,13 +256,9 @@ h2 {
   animation: route-flow 5s linear infinite;
 }
 
-.sake-orbit {
+.coast-path {
   fill: none;
-  stroke: #bf3f24;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-dasharray: 12 10;
-  animation: route-flow 4.2s linear infinite;
+  stroke: none;
 }
 
 .kuma-traveler-svg {
