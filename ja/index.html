@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260606c">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260606d">
 </head>
 <body>
   <header class="site-header">
@@ -36,32 +36,30 @@
           </p>
           <a class="cta" href="#contact">相談する</a>
         </div>
-        <figure class="hero-guide reveal delay-1">
+      </div>
+
+      <div class="hero-bottom reveal delay-2">
+        <figure class="hero-photo hero-photo-lock">
           <img src="../assets/images/DSCN0180.jpeg" alt="ガイドのレーナ">
           <figcaption>ガイド レーナ</figcaption>
         </figure>
-      </div>
 
-      <div class="hero-map reveal delay-2" role="img" aria-label="熊本付近から日本海側へ向かう旅のルートを示した日本地図">
-        <svg class="japan-map-svg" viewBox="0 0 1000 560" aria-hidden="true">
-          <g class="japan-shape">
-            <path d="M150 420 L180 390 L220 360 L250 360 L255 395 L230 430 L190 448 Z"></path>
-            <path d="M280 335 L330 298 L390 292 L455 255 L510 208 L565 190 L620 148 L700 135 L770 112 L825 108 L875 92 L905 108 L892 140 L845 158 L802 176 L755 206 L700 223 L645 246 L592 280 L528 292 L470 315 L415 345 L350 352 Z"></path>
-            <path d="M776 206 L804 188 L840 180 L866 195 L850 222 L816 238 L790 228 Z"></path>
-          </g>
-
-          <path class="travel-route" d="M210 420 C255 362 340 320 454 286 C585 242 680 182 780 130"></path>
-          <circle class="route-pin pin-start" cx="210" cy="420" r="9"></circle>
-          <circle class="route-pin pin-goal" cx="780" cy="130" r="9"></circle>
-          <text class="map-label" x="178" y="452">熊本</text>
-          <text class="map-label" x="738" y="110">日本海側</text>
-        </svg>
-
-        <div class="kuma-traveler" aria-hidden="true">
-          <span class="bear-face"></span>
-          <span class="bear-pack"></span>
+        <div class="hero-map" role="img" aria-label="熊本付近から日本海側へ向かう旅のルートを示した日本地図">
+          <img class="japan-map-image" src="../assets/images/japan-map.svg" alt="日本地図">
+          <svg class="map-overlay" viewBox="0 0 1000 560" aria-hidden="true">
+            <path class="travel-route" d="M285 438 C352 358 442 302 544 246 C632 198 712 160 790 116"></path>
+            <circle class="route-pin pin-start" cx="285" cy="438" r="9"></circle>
+            <circle class="route-pin pin-goal" cx="790" cy="116" r="9"></circle>
+            <text class="map-label" x="252" y="472">熊本</text>
+            <text class="map-label" x="740" y="95">日本海側</text>
+          </svg>
+          <div class="kuma-traveler" aria-hidden="true">
+            <span class="bear-face"></span>
+            <span class="bear-pack"></span>
+          </div>
+          <p class="route-caption">熊本から日本海側へ旅するイメージです。</p>
+          <p class="map-credit">地図: <a href="https://commons.wikimedia.org/wiki/File:Japan_location_map.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></p>
         </div>
-        <p class="route-caption">熊本出発で、日本海側へゆったり周遊するイメージです。</p>
       </div>
     </section>
 
