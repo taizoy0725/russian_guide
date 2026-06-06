@@ -287,10 +287,16 @@ h2 {
 }
 
 .photo-desc {
+  display: block;
   margin: 8px 0 0;
   color: var(--ink-soft);
   line-height: 1.7;
   font-size: 0.95rem;
+  background: #f8f3ea;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  min-height: calc(1.7em * 2);
 }
 
 .back-link {
