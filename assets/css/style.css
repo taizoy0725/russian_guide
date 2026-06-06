@@ -178,7 +178,8 @@ h2 {
   margin-top: 14px;
   display: grid;
   gap: 12px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -191,17 +192,18 @@ h2 {
 
 .destination-link .card {
   display: grid;
-  grid-template-rows: 180px auto 1fr;
+  grid-template-rows: 200px auto 1fr;
   height: 100%;
-  min-height: 360px;
+  width: 320px;
+  min-height: 380px;
 }
 
 .card-thumb {
   display: block;
-  width: 100%;
-  height: 180px;
-  min-height: 180px;
-  max-height: 180px;
+  width: 288px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--line);
@@ -319,11 +321,12 @@ footer {
   }
 
   .region-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 320px);
   }
 
   .destination-link .card {
-    min-height: 340px;
+    width: 320px;
+    min-height: 380px;
   }
 
   .card-grid {
@@ -337,11 +340,17 @@ footer {
 
 @media (max-width: 640px) {
   .region-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .destination-link .card {
+    width: 100%;
     min-height: auto;
+    grid-template-rows: 200px auto 1fr;
+  }
+
+  .card-thumb {
+    width: 100%;
   }
 
   .photo-grid {
