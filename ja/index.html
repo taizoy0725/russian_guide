@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260606h">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260606i">
 </head>
 <body>
   <header class="site-header">
@@ -43,40 +43,32 @@
           <div class="hero-map" role="img" aria-label="東京、沖縄、九州、新潟、北海道を周回する旅行ルートを示した日本地図">
             <img class="japan-map-image" src="../assets/images/japan-map.svg" alt="日本地図">
             <svg class="map-overlay" viewBox="0 0 1000 560" aria-hidden="true">
-              <circle class="route-pin" cx="635" cy="290" r="8"></circle>
-              <circle class="route-pin" cx="418" cy="458" r="8"></circle>
-              <circle class="route-pin" cx="470" cy="432" r="8"></circle>
-              <circle class="route-pin" cx="704" cy="260" r="8"></circle>
-              <circle class="route-pin pin-goal" cx="844" cy="106" r="8"></circle>
-              <text class="map-label" x="646" y="282">東京</text>
-              <text class="map-label" x="374" y="494">沖縄</text>
-              <text class="map-label" x="484" y="454">九州</text>
-              <text class="map-label" x="716" y="282">新潟</text>
-              <text class="map-label" x="854" y="96">北海道</text>
-            </svg>
-            <div class="kuma-traveler" aria-hidden="true">
-              <svg class="bear-family" viewBox="0 0 180 120">
+              <path id="sake-loop-path" class="sake-orbit" d="M 410 300 a 230 120 0 1 1 460 0 a 230 120 0 1 1 -460 0"></path>
+              <g class="kuma-traveler-svg">
                 <g class="bear-parent">
-                  <circle cx="52" cy="56" r="26"></circle>
-                  <circle cx="40" cy="34" r="10"></circle>
-                  <circle cx="64" cy="34" r="10"></circle>
+                  <circle cx="30" cy="18" r="18"></circle>
+                  <circle cx="22" cy="3" r="7"></circle>
+                  <circle cx="38" cy="3" r="7"></circle>
                 </g>
                 <g class="bear-child-one">
-                  <circle cx="98" cy="66" r="20"></circle>
-                  <circle cx="88" cy="48" r="8"></circle>
-                  <circle cx="108" cy="48" r="8"></circle>
+                  <circle cx="62" cy="25" r="14"></circle>
+                  <circle cx="56" cy="13" r="6"></circle>
+                  <circle cx="68" cy="13" r="6"></circle>
                 </g>
                 <g class="bear-child-two">
-                  <circle cx="138" cy="72" r="17"></circle>
-                  <circle cx="130" cy="56" r="7"></circle>
-                  <circle cx="146" cy="56" r="7"></circle>
+                  <circle cx="90" cy="30" r="12"></circle>
+                  <circle cx="84" cy="20" r="5"></circle>
+                  <circle cx="96" cy="20" r="5"></circle>
                 </g>
-                <rect class="pack pack-parent" x="66" y="52" width="17" height="20" rx="6"></rect>
-                <rect class="pack pack-child-one" x="109" y="62" width="13" height="16" rx="5"></rect>
-                <rect class="pack pack-child-two" x="148" y="68" width="11" height="14" rx="5"></rect>
-              </svg>
-            </div>
-            <p class="route-caption">親子3人で、東京から沖縄・九州・新潟・北海道をぐるぐる巡る旅のイメージです。</p>
+                <rect class="pack pack-parent" x="40" y="14" width="12" height="14" rx="4"></rect>
+                <rect class="pack pack-child-one" x="72" y="20" width="9" height="11" rx="3"></rect>
+                <rect class="pack pack-child-two" x="98" y="24" width="8" height="10" rx="3"></rect>
+                <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
+                  <mpath href="#sake-loop-path"></mpath>
+                </animateMotion>
+              </g>
+            </svg>
+            <p class="route-caption">日本酒編を、楕円ルートでぐるぐる回るイメージです。</p>
             <p class="map-credit">地図: <a href="https://commons.wikimedia.org/wiki/File:Japan_location_map.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></p>
           </div>
         </div>

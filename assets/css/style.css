@@ -256,50 +256,28 @@ h2 {
   animation: route-flow 5s linear infinite;
 }
 
-.route-pin {
-  fill: #c14d2f;
-  stroke: #fff;
-  stroke-width: 3;
+.sake-orbit {
+  fill: none;
+  stroke: #bf3f24;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 12 10;
+  animation: route-flow 4.2s linear infinite;
 }
 
-.pin-goal {
-  fill: #8e341e;
-}
-
-.map-label {
-  fill: #2a2722;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.kuma-traveler {
-  position: absolute;
-  left: 63.5%;
-  top: 51.8%;
-  width: 110px;
-  height: 72px;
-  transform: translate(-50%, -50%);
-  animation: traveler-loop 14s linear infinite;
-  z-index: 2;
-}
-
-.bear-family {
-  width: 100%;
-  height: 100%;
-  display: block;
+.kuma-traveler-svg {
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.28));
 }
 
-.bear-parent circle,
-.bear-child-one circle,
-.bear-child-two circle {
+.kuma-traveler-svg .bear-parent circle,
+.kuma-traveler-svg .bear-child-one circle,
+.kuma-traveler-svg .bear-child-two circle {
   fill: #2f2620;
   stroke: #fff;
   stroke-width: 2;
 }
 
-.pack {
+.kuma-traveler-svg .pack {
   fill: #bf3f24;
   stroke: #fff;
   stroke-width: 2;
@@ -547,39 +525,6 @@ footer {
   }
 }
 
-@keyframes traveler-loop {
-  0% {
-    left: 63.5%;
-    top: 51.8%;
-    transform: translate(-50%, -50%) scale(0.96);
-  }
-  22% {
-    left: 41.8%;
-    top: 81.8%;
-    transform: translate(-50%, -50%) scale(0.99);
-  }
-  40% {
-    left: 47%;
-    top: 77%;
-    transform: translate(-50%, -50%) scale(1.02);
-  }
-  66% {
-    left: 70.4%;
-    top: 46.4%;
-    transform: translate(-50%, -50%) scale(1.04);
-  }
-  84% {
-    left: 84.4%;
-    top: 18.9%;
-    transform: translate(-50%, -50%) scale(0.98);
-  }
-  100% {
-    left: 63.5%;
-    top: 51.8%;
-    transform: translate(-50%, -50%) scale(0.96);
-  }
-}
-
 @media (max-width: 920px) {
   .hero {
     grid-template-columns: 1fr;
@@ -595,10 +540,6 @@ footer {
 
   .hero-map {
     min-height: 44vh;
-  }
-
-  .map-label {
-    font-size: 20px;
   }
 
   .region-grid {
@@ -632,10 +573,6 @@ footer {
     height: auto;
     min-height: 320px;
     border-radius: 18px;
-  }
-
-  .map-label {
-    font-size: 16px;
   }
 
   .route-caption {
