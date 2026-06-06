@@ -157,6 +157,7 @@ h2 {
   grid-template-columns: 1fr;
   gap: 0;
   align-items: stretch;
+  padding-bottom: 0;
 }
 
 .hero-layout {
@@ -343,6 +344,10 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 24px;
+}
+
+#about.section {
+  margin-top: 0;
 }
 
 .section p {
