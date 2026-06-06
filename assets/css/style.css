@@ -185,13 +185,12 @@ h2 {
 
 .destination-item {
   width: 320px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 52px;
 }
 
 .destination-link {
   display: block;
-  height: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -225,9 +224,9 @@ h2 {
 
 .destination-extra {
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 44px;
-  padding-top: 8px;
+  min-height: 52px;
 }
 
 .destination-extra .cta {
