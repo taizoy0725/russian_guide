@@ -190,15 +190,18 @@ h2 {
 }
 
 .destination-link .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 180px auto 1fr;
   height: 100%;
   min-height: 360px;
 }
 
 .card-thumb {
+  display: block;
   width: 100%;
   height: 180px;
+  min-height: 180px;
+  max-height: 180px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--line);
