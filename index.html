@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ロシア語ガイド レーナ | Language</title>
   <meta name="description" content="日本ツアー向けロシア語ガイド レーナの公式サイト">
+  <link rel="alternate" hreflang="ja" href="ja/">
+  <link rel="alternate" hreflang="ru" href="ru/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
@@ -18,8 +20,16 @@
 
     <div class="lang-buttons">
       <a class="lang-button primary" href="ja/">日本語サイトへ</a>
-      <button class="lang-button" type="button" disabled title="準備中">Русский (準備中)</button>
+      <a class="lang-button" href="ru/">Русский сайт</a>
     </div>
   </main>
+  <script>
+    const language = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    if (language.toLowerCase().startsWith("ru")) {
+      window.location.replace("ru/");
+    } else if (language.toLowerCase().startsWith("ja")) {
+      window.location.replace("ja/");
+    }
+  </script>
 </body>
 </html>

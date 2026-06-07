@@ -6,6 +6,8 @@
 
 - `index.html`: 言語選択ページ
 - `ja/index.html`: 日本語ページ
+- `ru/index.html`: ロシア語ページ
+- `ru/destinations/`: ロシア語の各地ギャラリーページ
 - `assets/images/DSCN0180.jpeg`: 共通画像
 - `assets/css/style.css`: 共通スタイル
 - `assets/js/main.js`: 共通スクリプト
